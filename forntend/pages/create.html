@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create poll</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="topbar">
+        <h1>Create poll</h1>
+        <a class="btn secondary" href="./index.html">Back</a>
+      </header>
+
+      <section class="card">
+        <form id="createPollForm" class="grid">
+          <div>
+            <label for="question">Question</label>
+            <input
+              id="question"
+              name="question"
+              required
+              placeholder="What should we eat?"
+            />
+          </div>
+
+          <div>
+            <label for="options">Options (one per line)</label>
+            <textarea
+              id="options"
+              name="options"
+              rows="6"
+              required
+              placeholder="Pizza&#10;Burger&#10;Sushi"
+            ></textarea>
+          </div>
+
+          <div class="actions">
+            <button type="submit">Create</button>
+            <a class="btn secondary" href="./index.html">Cancel</a>
+          </div>
+        </form>
+        <p id="status" class="status muted"></p>
+      </section>
+    </main>
+
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/create.js"></script>
+  </body>
+</html>

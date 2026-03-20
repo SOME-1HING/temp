@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poll</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="topbar">
+        <h1 id="title">Poll</h1>
+        <a class="btn secondary" href="./index.html">All polls</a>
+      </header>
+
+      <section class="card">
+        <p id="question" class="muted"></p>
+        <ul id="options" class="poll-options"></ul>
+
+        <div class="actions" style="margin-top: 1rem">
+          <button id="reloadBtn" class="btn secondary" type="button">
+            Reload
+          </button>
+          <button id="deleteBtn" class="danger" type="button">
+            Delete poll
+          </button>
+        </div>
+
+        <p id="status" class="status muted"></p>
+      </section>
+    </main>
+
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/poll.js"></script>
+  </body>
+</html>

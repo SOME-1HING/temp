@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Poll Creator</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="topbar">
+        <h1>Polls</h1>
+        <a class="btn" href="./create.html">Create poll</a>
+      </header>
+
+      <section class="card">
+        <div class="actions" style="margin-bottom: 0.75rem">
+          <button id="refreshBtn" class="btn secondary" type="button">
+            Refresh
+          </button>
+        </div>
+        <p id="status" class="status muted"></p>
+        <div id="pollList" class="grid"></div>
+      </section>
+    </main>
+
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/index.js"></script>
+  </body>
+</html>
