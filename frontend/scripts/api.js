@@ -1,4 +1,4 @@
-const API_BASE = "https://online-poll-creator-backend.vercel.app";
+const API_BASE = "https://temp-backend-amber.vercel.app";
 
 async function request(path, options = {}) {
   const response = await fetch(`${API_BASE}${path}`, {
